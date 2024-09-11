@@ -1,0 +1,9 @@
+root = "." #the root directory of the project
+tmp_dir='tmp'
+[build] #build config
+    bin='main'
+    cmd='go build -o {{.Output}} {{.Input}}'
+    exclude=["tmp/*", "client/*"]
+    include=["**/*.go"]
+    ignore=["tmp/*"] 
+    build.
