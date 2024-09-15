@@ -47,8 +47,6 @@ func main() {
 
 	app := fiber.New()
 
-	//app.Use(cors.New(cors))
-
 	app.Get("/api/todos", getTodos)
 	app.Post("/api/todos", createTodos)
 	app.Patch("/api/todos/:id", updateTodos)
